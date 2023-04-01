@@ -1,0 +1,32 @@
+.contact{
+    max-width: 200px;
+    height: auto;
+    display: inline-block;
+    margin: 100px;
+    text-align: center;
+}
+.contact-figure,.contact-img{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.contact-img{
+    border-radius: 100%;
+    display: inline-block;
+}
+@media screen and (max-width: 912px) {
+    .contact{
+        margin: 0px;
+        text-align: center;
+    }
+    .contact-figure{
+        display: flex;
+        margin: 10px 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-img{
+      width: 50%;
+    }
+}

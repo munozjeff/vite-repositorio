@@ -1,0 +1,17 @@
+
+.paragraph{
+    box-sizing: border-box;
+    font-family: 'Bitter', serif;
+    padding-top: 0;
+    padding-right: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+    font-size: 2.5rem;
+}
+@media screen and (max-width:480px){
+    .paragraph{
+        font-size: 6vw;
+    }
+}
+

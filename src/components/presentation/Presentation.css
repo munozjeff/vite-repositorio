@@ -1,0 +1,178 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Bitter&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+.section-presentation{
+    box-sizing: border-box;
+    width: 100vw;
+    height: 90%;
+    z-index: 3;
+}
+.div-presentation{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    bottom: 50px;
+}
+.div-presentation h2{
+    font-family: 'Bitter', serif;
+    width: 100%;
+    height: auto;
+    font-size: 7vw;
+    background-color: transparent;
+    margin: 10px 0;
+    width: 0;
+    text-align: center;
+}
+.div-presentation p{
+    font-family: 'Bitter', serif;
+    width: 0;
+    height: auto;
+    font-size: 4vw;
+    background-color: transparent;
+    margin: 20px 0;
+    text-align: center;
+}
+/* @media screen and (max-width: 912px) {
+    .section-presentation{
+        width: 100vw;
+        height: auto;
+        position: absolute;
+        top: 65vw;
+        padding-top: 10px;
+    }
+    .div-presentation{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    h2{
+        font-family: 'Bitter', serif;
+        width: 100%;
+        text-align: center;
+        height: auto;
+        font-size: 7vw;
+        margin: 10px 0;
+    }
+    p{
+        margin: 0px;
+        text-align: center;
+    }
+} */
+.buttons{
+    position: absolute;
+    z-index: 11;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    height: 0px;
+    width: 100%;
+    overflow: hidden;
+    bottom: 0px;
+    /* animation: button_show 2s steps(40) forwards;
+    animation-delay: 4s; */
+}
+@keyframes button_show{
+    from{
+        height:0px
+    }
+    to{
+        height:40px
+    }
+}
+.buttons>ul{
+    display: flex;
+    color: aliceblue;
+    list-style: none;
+    bottom: 30px;
+    padding-left: 0;
+}
+
+.div-presentation a{
+    text-decoration: none;
+    color: white;
+    font-size: 3rem;
+    transition: all 0.5s ease;
+}
+.div-presentation a:hover{
+    color: red;
+    /* font-size: 3.5rem; */
+}
+.buttons>ul>li{
+   padding-right: 20px;
+}
+.typing{
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: escribir 2s steps(40) forwards;
+    width: 0;
+    box-sizing: border-box;
+}
+.typing-delay{
+    animation-delay:2s
+}
+.typing-delay-1{
+    animation-delay:3s
+}
+@keyframes escribir {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+}
+@media screen and (max-width: 992px) and (max-height:500px) {
+
+    .div-presentation{
+        width: 100%;
+        height: auto;
+        bottom: 10vh;
+        align-items: inherit;
+        /* animation: escribir 2s steps(40) forwards; */
+    }
+    .div-presentation h2{
+        padding-left: 3vw;
+        text-align: left;
+        /* animation: escribir 2s steps(40) forwards; */
+    }
+    .div-presentation p{
+        padding-left: 3vw;
+        text-align: left;
+        /* animation: escribir 2s steps(40) forwards; */
+    }
+}
+@media screen and (min-width: 992px){
+    .buttons{
+        display: block;
+        animation: button_show 2s steps(40) forwards;
+        animation-delay: 1s;
+        bottom: 0;
+        padding-left: 10vw;
+    }
+    .section-presentation{
+        align-items: center;
+    }
+    .div-presentation{
+        width: 100%;
+        height: auto;
+        top: 10vh;
+        align-items: initial;
+    }
+    .div-presentation h2{
+        padding-left: 3vw;
+        text-align: left;
+        /* animation: escribir 2s steps(40) forwards; */
+    }
+    .div-presentation p{
+        padding-left: 3vw;
+        text-align: left;
+        /* animation: escribir 2s steps(40) forwards; */
+    }
+}

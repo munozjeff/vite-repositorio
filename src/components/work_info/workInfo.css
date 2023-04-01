@@ -1,0 +1,41 @@
+.work-title{
+    opacity: 0;
+    font-size: 4rem;
+    width: 100%;
+    padding-left: 100px;
+    animation: show 1s forwards;
+    animation-delay: 1s;
+    margin-top: 30px;
+}
+.work-info{
+    padding-left: 150px;
+    opacity: 0;
+    animation: show 1s forwards;
+    animation-delay: 2s;
+}
+@keyframes show {
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 100;
+    }
+}
+@media screen and (max-width: 912px) {
+    .work-title{
+        padding-left: 0;
+        text-align: center;
+    }
+    .work-info{
+        padding: 0 5px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 400px) {
+    .work-title{
+        font-size: 7vw;
+    }
+    .work-info{
+        font-size: 6vw;
+    }
+}
