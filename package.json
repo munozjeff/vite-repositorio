@@ -1,15 +1,12 @@
 {
   "name": "vite-portafolio",
   "private": true,
-  "homepage": "https://munozjeff.github.io/vite-repositorio",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-
-    "predeploy":"npm run build",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
